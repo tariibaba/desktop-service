@@ -9,6 +9,10 @@ if (['win32', 'darwin', 'linux'].includes(process.platform)) {
       break;
     case 'linux':
       Service = require('node-linux').Service;
+      Object.defineProperty(Service.prototype, 'exists', {
+        writable: false,
+        get: Service.prototype.exists,
+      });
       break;
     default:
       break;
