@@ -23,7 +23,7 @@ svc.install();
 After the installation the service will be listed like any other service in the service management
 utility of the OS.
 
-![Sample Service listed in the Services utility on Windows](images/sample-service.jpg)
+![Sample Service listed in the Services utility on Windows](https://github.com/tariibaba/desktop-service/blob/main/images/sample-service.jpg)
 
 ## Environment Variables
 
@@ -56,7 +56,7 @@ var Service = require('desktop-service');
 
 var svc = new Service({
   name: 'Sample Service',
-  script: path.join(__dirname, 'service.js'),
+  script: require('path').join(__dirname, 'service.js'),
 });
 
 svc.on('uninstall', function () {
