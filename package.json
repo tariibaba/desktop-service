@@ -1,6 +1,6 @@
 {
   "name": "desktop-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run Node.js scripts as native services on Windows, Mac OS and Linux.",
   "main": "src/index.js",
   "author": "Ayibatari Ibaba",
