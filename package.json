@@ -1,6 +1,6 @@
 {
   "name": "desktop-service",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Run Node.js scripts as native services on Windows, Mac OS and Linux.",
   "main": "src/index.js",
   "author": "Ayibatari Ibaba",
@@ -19,12 +19,14 @@
     "service",
     "service",
     "desktop service",
-    "daemon"
+    "daemon",
+    "os",
+    "os service"
   ],
   "scripts": {
     "build": "babel src -d dist"
   },
-  "dependencies": {
+  "optionalDependencies": {
     "node-linux": "^0.1.12",
     "node-mac": "^1.0.1",
     "node-windows": "^1.0.0-beta.5"
